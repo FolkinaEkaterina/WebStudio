@@ -1,0 +1,133 @@
+.page-header {
+  border-bottom: 1px solid var(--border-top-color);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigate {
+  display: flex;
+}
+
+
+.site-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  display: flex;
+  margin-left: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.site-nav__nav {
+  display: inline-block;
+  padding: 32px 0;
+  color: var(--title-text-color);
+}
+
+.site-nav__item, 
+.contacts__item {
+  margin-right: 50px;
+
+  &:last-child{
+    margin-right: 0;
+}
+}
+
+.contacts__link {
+  padding: 32px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 0 0;
+  }
+}
+
+.contacts__item {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-bottom: 10px;
+  margin-right: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.contacts__icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+
+  transition: fill 250ms var(--cubic);
+
+  &:hover, &:focus {
+    fill: var(--accent-color);
+}
+}
+
+/* nav and contacts */
+
+.site-nav__nav,
+.contacts__link {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
+  color: currentColor;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin: 0;
+
+  transition: color 250ms var(--cubic);
+
+  &:hover, &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-nav__current {
+  color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.site-nav__current {
+ &::after {  
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+ }
+}

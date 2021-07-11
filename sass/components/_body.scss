@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+
+  font-family: var(--primary-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Container */
+
+.container {
+  margin:0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 479.98px) {
+     overflow: hidden;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.section{
+  padding-top: 60px;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  padding-top: 94px;
+  }
+}
+
+/* Отмена значков ненумерованного списка, отмена падингов и маржинов */
+
+.list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* titles */
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

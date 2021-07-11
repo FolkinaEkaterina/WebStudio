@@ -1,0 +1,123 @@
+
+.hero {
+  background-color: var(--background-hero-color);
+  
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    var(--gradient),
+    var(--gradient)
+  ),
+   url('/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    background-image: linear-gradient(
+      var(--gradient),
+      var(--gradient)
+    ),
+    url('/images/hero-480.jpg');
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    background-image: linear-gradient(
+      var(--gradient),
+      var(--gradient)
+    ),
+    url('/images/hero-768.jpg');
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.overlay {
+  background-image: linear-gradient(
+    var(--gradient),
+    var(--gradient)
+  ), url('/images/box11-370-3.jpg');
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+      var(--gradient),
+      var(--gradient)
+    ), url('/images/hero-480-2.jpg');
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+      var(--gradient),
+      var(--gradient)
+    ), url('/images/hero-768-2.jpg');
+  }
+}
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/* button */
+
+.hero__button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: var(--hero-button-shadow);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--cubic);
+
+  &:hover, &:focus {
+  background-color: var(--second-accent-color);
+  box-shadow: var(--hero-button-shadow);
+  color: var(--white-color);
+  }
+}
