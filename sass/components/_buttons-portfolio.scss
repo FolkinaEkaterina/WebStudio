@@ -1,4 +1,3 @@
-
 .buttons__button {
   display: inline-block;
   border-radius: 4px;
@@ -16,22 +15,29 @@
 
   cursor: pointer;
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: var(--button-shadow);
+  }
+}
+
+.buttons__button--current {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: var(--button-shadow);
-  }
 }
 
 .buttons {
   margin-bottom: 30px;
-    
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
@@ -51,8 +57,8 @@
 }
 
 .buttons__item {
-  &:nth-child(-n+2) {
-  margin-bottom: 15px;
+  &:nth-child(-n + 2) {
+    margin-bottom: 15px;
   }
 
   @media screen and (max-width: 386px) {

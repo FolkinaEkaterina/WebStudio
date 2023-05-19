@@ -1,382 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Шапка сайту -->
+    <header class="page-header">
+      <div class="container main-nav">
+        <nav class="navigate">
+          <!-- Лого -->
+          <a href="" id="logo" class="logo logo--accent"
+            >Web<span class="logo">Studio</span></a
+          >
 
- <!-- Шапка сайта -->
- <header class="page-header">
-    <div class="container main-nav">
-      <nav class="navigate">
-        <!-- Лого -->
-        <a href="" id="logo" class="logo logo--accent">Web<span class="logo">Studio</span></a>
-
-        <!-- Навигация сайтa -->
-        <ul class="site-nav list">
-          <li class="site-nav__item"><a href="./index.html" class="site-nav__nav">Студия</a></li>
-          <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__nav site-nav__current">Портфолио</a></li>
-          <li class="site-nav__item"><a href="#contacts" class="site-nav__nav">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <!-- Контакты -->
-
-      <ul class="contacts list">
-        <li class="contacts__item">
-          <a  href="mailto:info@devstudio.com" class="contacts__link">
-            <svg class="contacts__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+380961111111" class="contacts__link">
-            <svg class="contacts__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-
-      <button type="button" class="menu-open">
-        <svg width="40" height="40" >
-          <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </div>
-  
-    <!-- Мобильно меню -->
-    <div class="mobile-nav is-hidden">
-      <div class="container">
-  
-        <button type="button" class="menu-close">
-          <svg width="40" height="40" >
-          <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
-        </svg>
-        </button>
-          
-        <nav>
-          <ul class="mobile-menu list">
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="./index.html">Студия</a>
+          <!-- Навігація сайту -->
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__nav">Студія</a>
             </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link current"
-              href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__nav site-nav__current"
+                >Портфоліо</a
+              >
             </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link"
-              href="./index.html">Контакты</a>
+            <li class="site-nav__item">
+              <a href="#contacts" class="site-nav__nav">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div class="mobile-nav__bottom">
-          <ul class="mobile-contacts list">
-            <li class="mobile-contacts__item">
-              <a class="mobile-contacts__link mobile-contacts__tel"
-              href="./index.html">+38 096 111 11</a>
+
+        <!-- Контакти -->
+
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <button type="button" class="menu-open">
+          <svg width="40" height="40">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Мобільне меню -->
+      <div class="mobile-nav is-hidden">
+        <div class="container">
+          <button type="button" class="menu-close">
+            <svg width="40" height="40">
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+
+          <nav>
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-nav__bottom">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link mobile-contacts__tel"
+                  href="./index.html"
+                  >+38 096 111 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link mobile-contacts__mail"
+                  href="./portfolio.html"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-network list">
+              <li class="mobile-network__item">
+                <a
+                  class="mobile-network__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-network__item">
+                <a
+                  class="mobile-network__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-network__item">
+                <a
+                  class="mobile-network__link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-network__item">
+                <a
+                  class="mobile-network__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section -->
+
+    <main>
+      <section class="section">
+        <div class="container portfolio">
+          <h1 class="hidden-title">Наші роботи</h1>
+
+          <!-- Список кнопок -->
+          <ul class="list buttons">
+            <li class="buttons__item">
+              <button
+                data-filter="all"
+                class="buttons__button buttons__button--current"
+                type="button"
+              >
+                Всі
+              </button>
             </li>
-            <li class="mobile-contacts__item">
-              <a class="mobile-contacts__link mobile-contacts__mail"
-                href="./portfolio.html">info@devstudio.com</a>
+
+            <li class="buttons__item">
+              <button
+                data-filter="website"
+                class="buttons__button"
+                type="button"
+              >
+                Веб-сайти
+              </button>
+            </li>
+
+            <li class="buttons__item">
+              <button data-filter="app" class="buttons__button" type="button">
+                Додатки
+              </button>
+            </li>
+
+            <li class="buttons__item">
+              <button
+                data-filter="design"
+                class="buttons__button"
+                type="button"
+              >
+                Дизайн
+              </button>
+            </li>
+
+            <li class="buttons__item">
+              <button
+                data-filter="marketing"
+                class="buttons__button"
+                type="button"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
 
-          <ul class="mobile-network list">
-            <li class="mobile-network__item">
-              <a class="mobile-network__link" href="./index.html">Instagram</a>
+          <!-- Список робіт -->
+          <ul class="list flex-container">
+            <li class="flex-container__element website">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="./images/img8.jpg 1x, ./images/box11-370-9.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img13-354.jpg   1x,
+                        ./images/img13-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img13-450.jpg   1x,
+                        ./images/img13-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img8.jpg"
+                      alt="Сторінка сайту на моніторі ноутбука"
+                    />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">Технокряк</h2>
+                  <p class="flex-container__sort">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li class="mobile-network__item">
-              <a class="mobile-network__link" href="./portfolio.html">Twitter</a>
+            <li class="flex-container__element design">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img9.jpg         1x,
+                        ./images/box11-370-10.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img5-354.jpg   1x,
+                        ./images/img5-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img5-450.jpg   1x,
+                        ./images/img5-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img9.jpg"
+                      alt="Два баскетболіста на постері"
+                    />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="flex-container__sort">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li class="mobile-network__item">
-              <a class="mobile-network__link" href="./index.html">Facebook</a>
+            <li class="flex-container__element app">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img10.jpg        1x,
+                        ./images/box11-370-11.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img6-354.jpg   1x,
+                        ./images/img6-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img6-450.jpg   1x,
+                        ./images/img6-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img10.jpg"
+                      alt="Лого ресторана на фоні акули"
+                    />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">Ресторан Seafood</h2>
+                  <p class="flex-container__sort">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li class="mobile-network__item">
-              <a class="mobile-network__link" href="./portfolio.html">LinkedIn</a>
+            <li class="flex-container__element marketing">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img11.jpg        1x,
+                        ./images/box11-370-12.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img7-354.jpg   1x,
+                        ./images/img7-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img7-450.jpg   1x,
+                        ./images/img7-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/img11.jpg" alt="Навушники" />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">Проєкт Prime</h2>
+                  <p class="flex-container__sort">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="flex-container__element app">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img12.jpg        1x,
+                        ./images/box11-370-13.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img8-354.jpg   1x,
+                        ./images/img8-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img8-450.jpg   1x,
+                        ./images/img8-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/img12.jpg" alt="Коробки" />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">Проєкт Boxes</h2>
+                  <p class="flex-container__sort">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="flex-container__element website">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img13.jpg        1x,
+                        ./images/box11-370-14.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img9-354.jpg   1x,
+                        ./images/img9-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img9-450.jpg   1x,
+                        ./images/img9-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/img13.jpg" alt="Монітор" />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="flex-container__sort">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="flex-container__element design">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img14.jpg        1x,
+                        ./images/box11-370-15.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img10-354.jpg   1x,
+                        ./images/img10-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img10-450.jpg   1x,
+                        ./images/img10-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/img14.jpg" alt="Журнал" />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">
+                    Видання Limited Edition
+                  </h2>
+                  <p class="flex-container__sort">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="flex-container__element marketing">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img15.jpg        1x,
+                        ./images/box11-370-16.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img11-354.jpg   1x,
+                        ./images/img11-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img11-450.jpg   1x,
+                        ./images/img11-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img src="./images/img15.jpg" alt="Лейбл" />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">Проєкт LAB</h2>
+                  <p class="flex-container__sort">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="flex-container__element app">
+              <a href="#" class="flex-container__link">
+                <div class="flex-container__overlay-portfolio">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img16.jpg        1x,
+                        ./images/box11-370-17.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img12-354.jpg   1x,
+                        ./images/img12-354-2.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img12-450.jpg   1x,
+                        ./images/img12-450-2.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/img16.jpg"
+                      alt="Використання додатку на ноутбуці"
+                    />
+                  </picture>
+
+                  <p class="flex-container__text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="flex-container__list">
+                  <h2 class="flex-container__project">Growing Business</h2>
+                  <p class="flex-container__sort">Додаток</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </header>
+      </section>
+    </main>
 
-
-  <!-- Section -->
-
-  <main>
-    <section class="section">
-      <div class="container portfolio">
-        <h1 class="hidden-title"> Наши работы </h1>
-
-        <!-- Список кнопок -->
-        <ul class="list buttons">
-          <li class="buttons__item"><button class="buttons__button" type="button">Все</button></li>
-          <li class="buttons__item"><button  class="buttons__button" type="button">Веб-сайты</button></li>
-          <li class="buttons__item"><button  class="buttons__button" type="button">Приложения</button></li>
-          <li class="buttons__item"><button  class="buttons__button" type="button">Дизайн</button></li>
-          <li class="buttons__item"><button  class="buttons__button" type="button">Маркетинг</button></li>
-        </ul>
-            
-        <!-- Список работ -->
-        <ul class="list flex-container">
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img8.jpg 1x, ./images/box11-370-9.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img13-354.jpg 1x, ./images/img13-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img13-450.jpg 1x, ./images/img13-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img8.jpg" alt="Страница сайта на экране ноутбука"/>
-                </picture>
-               
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Технокряк</h2>
-                <p class="flex-container__sort">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img9.jpg 1x, ./images/box11-370-10.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img5-354.jpg 1x, ./images/img5-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img5-450.jpg 1x, ./images/img5-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img9.jpg" alt="Два баскетболиста на постере"/>
-                </picture>
-                
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Постер New Orlean vs Golden Star</h2>
-                <p class="flex-container__sort">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img10.jpg 1x, ./images/box11-370-11.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img6-354.jpg 1x, ./images/img6-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img6-450.jpg 1x, ./images/img6-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img10.jpg" alt="Лого ресторана на фоне акулы"/>
-                </picture>
-               
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Ресторан Seafood</h2>
-                <p class="flex-container__sort">Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img11.jpg 1x, ./images/box11-370-12.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img7-354.jpg 1x, ./images/img7-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img7-450.jpg 1x, ./images/img7-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img11.jpg" alt="Наушники"/>
-                </picture>
-                
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Проект Prime</h2>
-                <p class="flex-container__sort">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img12.jpg 1x, ./images/box11-370-13.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img8-354.jpg 1x, ./images/img8-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img8-450.jpg 1x, ./images/img8-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img12.jpg" alt="Коробки"/>
-                </picture>
-                
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Проект Boxes</h2>
-                <p class="flex-container__sort">Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img13.jpg 1x, ./images/box11-370-14.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img9-354.jpg 1x, ./images/img9-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img9-450.jpg 1x, ./images/img9-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img13.jpg" alt="Монитор"/>
-                </picture>
-                
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Inspiration has no Borders</h2>
-                <p class="flex-container__sort">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img14.jpg 1x, ./images/box11-370-15.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img10-354.jpg 1x, ./images/img10-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img10-450.jpg 1x, ./images/img10-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img14.jpg" alt="Журнал"/>
-                </picture>
-               
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Издание Limited Edition</h2>
-                <p class="flex-container__sort">Дизайн</p>
-              </div>
-            </a>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-                
-                <picture>
-                  <source srcset="./images/img15.jpg 1x, ./images/box11-370-16.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img11-354.jpg 1x, ./images/img11-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img11-450.jpg 1x, ./images/img11-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img15.jpg" alt="Лейбл"/>
-                </picture>
-               
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Проект LAB</h2>
-                <p class="flex-container__sort">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="flex-container__element">
-            <a href="" class="flex-container__link">
-              <div  class="flex-container__overlay-portfolio">
-
-                <picture>
-                  <source srcset="./images/img16.jpg 1x, ./images/box11-370-17.jpg 2x" media="(min-width: 1200px)">
-                  <source srcset="./images/img12-354.jpg 1x, ./images/img12-354-2.jpg 2x" media="(min-width: 768px)">
-                  <source srcset="./images/img12-450.jpg 1x, ./images/img12-450-2.jpg 2x" media="(min-width: 480px)">
-                  <img src="./images/img16.jpg" alt="Пользование приложением на ноутбуке"/>
-                </picture>
-                
-                <p class="flex-container__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-              </div>
-              <div class="flex-container__list">
-                <h2 class="flex-container__project">Growing Business</h2>
-                <p class="flex-container__sort">Приложение</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-
-  <!-- Подвал сайта -->
-  <footer class="page-footer">
-    <div class="container footer-container">
-      <div class="address">
+    <!-- Підвал сайту -->
+    <footer class="page-footer">
+      <div class="container footer-container">
+        <div class="address">
           <!-- Лого -->
-        <a href="#logo" class="logo logo--bottom">Web<span class="logo logo--white">Studio</span></a>
-        <!-- Адрес -->
-        <address class="address-list">
-          <ul class="list">
-            <li class="address-list__par">
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <a href="#logo" class="logo logo--bottom"
+            >Web<span class="logo logo--white">Studio</span></a
+          >
+          <!-- Адреса -->
+          <address class="address-list">
+            <ul class="list">
+              <li class="address-list__par">
+                <p>м. Київ, пр-т Лесі Українки, 26</p>
+              </li>
+              <li class="address-list__par" id="contacts">
+                <a href="mailto:info@devstudio.com" class="address-list__ad-res"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__par">
+                <a href="tel:+380961111111" class="address-list__ad-res"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-links">
+          <h1 class="footer-title">Приєднуйтесь</h1>
+          <ul class="list icon-list">
+            <li class="icon-list__icons">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-list__footer-link"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list__par" id="contacts"><a href="mailto:info@devstudio.com" class="address-list__ad-res">info@devstudio.com</a></li>
-            <li class="address-list__par"><a href="tel:+380961111111" class="address-list__ad-res">+38 096 111 11 11</a></li>
+            <li class="icon-list__icons">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-list__footer-link"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list__icons">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-list__footer-link"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-list__icons">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-list__footer-link"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
-      </div>
-      <div class="footer-links">
-        <h1 class="footer-title">Присоединяйтесь</h1>
-        <ul class="list icon-list">
-          <li class="icon-list__icons">
-            <a href="" class="icon-list__footer-link"> 
-              <svg width=20 height=20>
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon-list__icons">
-            <a href="" class="icon-list__footer-link"> 
-              <svg width=20 height=20>
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon-list__icons">
-            <a href="" class="icon-list__footer-link"> 
-              <svg width=20 height=20>
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icon-list__icons">
-            <a href="" class="icon-list__footer-link"> 
-              <svg width=20 height=20>
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
 
-      <div class="footer-form">
-        <h2 class="footer-title">Подпишитесь на рассылку</h2>
+        <div class="footer-form">
+          <h2 class="footer-title">Підпишіться на розсилку</h2>
 
-        <form class="email-footer-form">
-          <div class="email-form">
-            <input class="email-form__input"  type="email" name="email" placeholder=""/>
-            <label for="email" class="email-form__label">E-mail</label>
-          </div>
-          <button type="submit" class="email-form__button hero__button">Подписаться
-            <svg class="email-form__icon" width=24 height=24>
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+          <form class="email-footer-form">
+            <div class="email-form">
+              <input
+                class="email-form__input"
+                type="email"
+                name="email"
+                placeholder=""
+              />
+              <label for="email" class="email-form__label">E-mail</label>
+            </div>
+            <button type="submit" class="email-form__button hero__button">
+              Підписатись
+              <svg class="email-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="./js/mobile-menu.js"></script>
-</body>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
+  </body>
 </html>
